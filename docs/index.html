@@ -5,36 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GenUS</title>
     <style>
-        /* Reset body styles */
-        body {
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        /* Styling for iframe (banner at the top) */
+        /* iframe for banner */
         iframe {
-            display: block;
-            width: 100%;
-            height: 120px; /* Adjust as needed */
-            border: none;
+            display: block; 
+            width: 100vw;  
+            height: 120px;  
+            border: none;    
+            margin-bottom: -28px; /* Removes extra spacing below banner */
         }
 
-        /* Light grey body content below the banner */
+        /* Body wrapper */
         .content {
-            background-color: lightgrey; /* Light grey */
-            min-height: 600px; /* Adjust height as needed */
+            background-color: lightgrey; 
+            width: 100vw; 
+            height: calc(103vh - 120px); 
             padding: 20px;
         }
     </style>
 </head>
 <body>
-    <!-- Top Banner -->
+    <!-- For the Banner -->
     <iframe src="banner_navigation.html"></iframe>
 
-    <!-- Body Content (Light Grey Section) -->
+    <!-- For the Body -->
     <div class="content">
-        <!-- Add content here for body -->
+        <!-- Have body's content here -->
     </div>
 </body>
 </html>
